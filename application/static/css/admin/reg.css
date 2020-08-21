@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+html,body{
+    height: 100%;
+}
+
+.container{
+    background: url("https://ccdn.goodq.top/caches/b2722f2617dd98e9cdb285b51047a21d/aHR0cHM6Ly81ZDdhMDE2MGIwZTdkLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDkvNGRkNjEyM2U4OWMwNzBhZmY1MzU1NTQ1ZWNjZjk1MDUtOTAud2VicA_p_p100_p_3D_p_p100_p_3D.webp");
+    background-size: cover;
+    height: 80%;
+    position: absolute;
+    left: 0;right: 0;top: 0;bottom: 0; margin: auto;
+}
+.form-horizontal h1{
+    font-size: 26px;
+    color: white;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form-horizontal{
+    width: 350px;
+    height: 80%;
+    color: white;
+    box-shadow: 0 0 10px black;
+    position: absolute;
+    right: 10%;top: 0;bottom: 0; margin: auto;
+    text-align: center;
+    padding: 20px 30px;
+}
+.control-label{
+    font-size: 12px;
+    padding: 0;
+}
+.col-sm-offset-2{
+    padding: 0;
+    margin: 0;
+}
+.checkbox{
+    width: 100%;
+    padding: 0;
+}
+.btn btn-success{
+    float: left;
+}
+.res{
+    float: right;
+
+}
