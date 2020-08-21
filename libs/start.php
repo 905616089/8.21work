@@ -44,9 +44,10 @@ $config=include_once APP_NAME."config.php";
 include_once LIBS_PATH."route.class.php";
 include_once SMARTY_PATH."Smarty.class.php";
 
+
 function auto($classname){
 
-    echo MAIN_PATH.str_replace("\\","/",$classname).".class.php";
+//    echo MAIN_PATH.str_replace("\\","/",$classname).".class.php";
     include_once MAIN_PATH.str_replace("\\","/",$classname).".class.php";
 }
 

@@ -1,7 +1,6 @@
 <?php
 namespace libs;
 class db{
-
     function __construct()
     {
         global $config;
@@ -13,12 +12,14 @@ class db{
         $dataname=isset($config["database"]["dataname"])? $config["database"]["dataname"]:"wui2006";
         $port=isset($config["database"]["port"])? $config["database"]["port"]:"3308";
 
+
        $db=new \mysqli($host,$user,$password,$dataname,$port);
-       if($db->connect_error){
+       if(mysqli_connect_error()){
            die("shujukushibai");
        }
        $db->query("set name utf8");
        $this->db=$db;
+
     }
 
 }
