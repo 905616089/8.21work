@@ -11,8 +11,6 @@ class smarty{
         $compile=isset($config["smarty"]["compile"])? $config["smarty"]["compile"]:COMPILE_PATH;
         $cache=isset($config["smarty"]["cache"])? $config["smarty"]["cache"]:CACHE_PATH;
 
-        echo $config["smarty"]["template"];
-        echo $template;
         $smarty->setCacheDir($cache);
         $smarty->setCompileDir($compile);
         $smarty->setTemplateDir($template);
@@ -23,7 +21,7 @@ class smarty{
         $this->smarty->assign($attr,$val);
     }
     function display($file){
-        echo $file;
+
         $this->smarty->display($file);
     }
 }
