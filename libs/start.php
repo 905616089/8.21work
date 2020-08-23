@@ -21,6 +21,10 @@ define("COMPILE_PATH",APP_NAME."compile".DIRECTORY_SEPARATOR);
 define("CACHE_PATH",APP_NAME."cache".DIRECTORY_SEPARATOR);
 //定义smarty路径
 define("SMARTY_PATH",LIBS_PATH."smarty".DIRECTORY_SEPARATOR);
+//定义字体路径
+define("FONT_PATH",APP_NAME."static".DIRECTORY_SEPARATOR."font".DIRECTORY_SEPARATOR);
+
+
 
 //服务器路径 通过http协议访问的路径
 define("HOST_ADD","http://".$_SERVER["HTTP_HOST"]);
@@ -40,7 +44,7 @@ define("FONT_ADD",STATIC_ADD."font"."/");
 define("IMG_ADD",STATIC_ADD."img"."/");
 
 
-$config=include_once APP_NAME."config.php";
+$config= include_once APP_NAME . "config.php";
 include_once LIBS_PATH."route.class.php";
 include_once SMARTY_PATH."Smarty.class.php";
 

@@ -1,4 +1,5 @@
 <?php
+session_start();
 header("content-type:text/html;charset:utf8");
 define("MVC",true);
 // 应用文件夹 PHP常用的魔术常量 __DIR__ __CLASS__ __FILE__
