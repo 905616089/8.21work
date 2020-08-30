@@ -8,7 +8,7 @@ html,body{
 
 header{
     width: 100%;
-    height: 10%;
+    height: 71px;
     box-shadow: 0 -2px 2px 0 #f6f6f6 inset;
     box-sizing: border-box;
 }
@@ -58,6 +58,7 @@ header{
     width: 100%;
     height: 100%;
     background: rgb(89,171,139);
+
 }
 .mix img {
     float: left;

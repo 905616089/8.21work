@@ -1,0 +1,16 @@
+body{
+    background: rgb(244,249,254)
+}
+table tbody tr td{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+
+}
+.boxs{
+    margin-top: 30px;
+    background: white;
+}
+a{
+    cursor: pointer;
+}

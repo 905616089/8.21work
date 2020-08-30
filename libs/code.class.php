@@ -47,7 +47,7 @@ class  code
             $size = mt_rand($this->fontsize["min"], $this->fontsize["max"]);
             $angle = mt_rand($this->fontangle["min"], $this->fontangle["max"]);
             $space = $this->width / ($this->codelength * 2 - 1);
-            imagettftext($this->image, $size, $angle, mt_rand($space * $i, $space * max(($i * 2), 1)), 20, $this->setColor("a"), $_SERVER['DOCUMENT_ROOT']."/server/8.15/mvc/application/static/font/as.ttf ", $str[$i]);
+            imagettftext($this->image, $size, $angle, mt_rand($space * $i, $space * max(($i * 2), 1)), 30, $this->setColor("a"), $_SERVER['DOCUMENT_ROOT']."/server/8.15/mvc/application/static/font/as.ttf ", $str[$i]);
         }
 
 
