@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-08-30 11:45:26
+/* Smarty version 3.1.34-dev-7, created on 2020-08-30 15:25:23
   from 'E:\wamp64\www\server\8.15\mvc\application\template\index\product.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f4b9156296ae9_22535094',
+  'unifunc' => 'content_5f4bc4e3d10ee0_30365748',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '791c04ad5882ed4017eda8272232d93980522802' => 
     array (
       0 => 'E:\\wamp64\\www\\server\\8.15\\mvc\\application\\template\\index\\product.html',
-      1 => 1598787847,
+      1 => 1598801115,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f4b9156296ae9_22535094 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f4bc4e3d10ee0_30365748 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -148,111 +148,16 @@ index/product.css">
                 <div class="leftbtn"><</div>
                 <div class="center-div">
                     <div class="center-img">
-                        <div class="center-list">
-                            <div class="center-list-img">
-                                <img src="https://ccdn.goodq.top/caches/b2722f2617dd98e9cdb285b51047a21d/aHR0cHM6Ly81ZDdhMDE2MGIwZTdkLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDkvNTI4YzliODc2ZmNjYTE5ODQwODZkN2VkNGQ5OWMyNDMtOTAud2VicA_p_p100_p_3D_p_p100_p_3D.webp" alt="">
-
-                            </div>
-                            <div class="center-list-title">
-                                <div class="list-title-div">
-                                    <span class="span1">传世</span>
-                                    <span class="span2">麦香</span>
-                                </div>
-                                <img src="https://ccdn.goodq.top/caches/b2722f2617dd98e9cdb285b51047a21d/aHR0cHM6Ly81ZDdhMDE2MGIwZTdkLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDkvMzY4ZWVjOWEzNGU0NmIwYzY1MTFiMDEzZGRhMWE1MWQtOTAud2VicA_p_p100_p_3D_p_p100_p_3D.webp" alt="">
-                                <div class="list-title-content">
-                                    当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。
-                                </div>
+                        <?php echo $_smarty_tpl->tpl_vars['recommend']->value;?>
 
 
-                                <img src="https://ccdn.goodq.top/caches/b2722f2617dd98e9cdb285b51047a21d/aHR0cHM6Ly81ZDdhMDE2MGIwZTdkLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDkvZjg2ZDE3Y2JjMDZjMWMwY2EwOTc3ODRjMTIxYzc4NmUtOTAud2VicA_p_p100_p_3D_p_p100_p_3D.webp" alt="">
-                            </div>
-                        </div>
-                        <div class="center-list">
-                            <div class="center-list-img">
-                                <img src="https://ccdn.goodq.top/caches/b2722f2617dd98e9cdb285b51047a21d/aHR0cHM6Ly81ZDdhMDE2MGIwZTdkLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDkvNTI4YzliODc2ZmNjYTE5ODQwODZkN2VkNGQ5OWMyNDMtOTAud2VicA_p_p100_p_3D_p_p100_p_3D.webp" alt="">
-
-                            </div>
-                            <div class="center-list-title">
-                                <div class="list-title-div">
-                                    <span class="span1">传世</span>
-                                    <span class="span2">麦香</span>
-                                </div>
-                                <img src="https://ccdn.goodq.top/caches/b2722f2617dd98e9cdb285b51047a21d/aHR0cHM6Ly81ZDdhMDE2MGIwZTdkLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDkvMzY4ZWVjOWEzNGU0NmIwYzY1MTFiMDEzZGRhMWE1MWQtOTAud2VicA_p_p100_p_3D_p_p100_p_3D.webp" alt="">
-                                <div class="list-title-content">
-                                    当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。
-                                </div>
-
-
-                                <img src="https://ccdn.goodq.top/caches/b2722f2617dd98e9cdb285b51047a21d/aHR0cHM6Ly81ZDdhMDE2MGIwZTdkLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDkvZjg2ZDE3Y2JjMDZjMWMwY2EwOTc3ODRjMTIxYzc4NmUtOTAud2VicA_p_p100_p_3D_p_p100_p_3D.webp" alt="">
-                            </div>
-                        </div>
-
-                        <div class="center-list">
-                            <div class="center-list-img">
-                                <img src="https://ccdn.goodq.top/caches/b2722f2617dd98e9cdb285b51047a21d/aHR0cHM6Ly81ZDdhMDE2MGIwZTdkLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDkvNTI4YzliODc2ZmNjYTE5ODQwODZkN2VkNGQ5OWMyNDMtOTAud2VicA_p_p100_p_3D_p_p100_p_3D.webp" alt="">
-
-                            </div>
-                            <div class="center-list-title">
-                                <div class="list-title-div">
-                                    <span class="span1">传世</span>
-                                    <span class="span2">麦香</span>
-                                </div>
-                                <img src="https://ccdn.goodq.top/caches/b2722f2617dd98e9cdb285b51047a21d/aHR0cHM6Ly81ZDdhMDE2MGIwZTdkLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDkvMzY4ZWVjOWEzNGU0NmIwYzY1MTFiMDEzZGRhMWE1MWQtOTAud2VicA_p_p100_p_3D_p_p100_p_3D.webp" alt="">
-                                <div class="list-title-content">
-                                    当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。
-                                </div>
-
-
-                                <img src="https://ccdn.goodq.top/caches/b2722f2617dd98e9cdb285b51047a21d/aHR0cHM6Ly81ZDdhMDE2MGIwZTdkLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDkvZjg2ZDE3Y2JjMDZjMWMwY2EwOTc3ODRjMTIxYzc4NmUtOTAud2VicA_p_p100_p_3D_p_p100_p_3D.webp" alt="">
-                            </div>
-                        </div>
-
-                        <div class="center-list">
-                            <div class="center-list-img">
-                                <img src="https://ccdn.goodq.top/caches/b2722f2617dd98e9cdb285b51047a21d/aHR0cHM6Ly81ZDdhMDE2MGIwZTdkLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDkvNTI4YzliODc2ZmNjYTE5ODQwODZkN2VkNGQ5OWMyNDMtOTAud2VicA_p_p100_p_3D_p_p100_p_3D.webp" alt="">
-
-                            </div>
-                            <div class="center-list-title">
-                                <div class="list-title-div">
-                                    <span class="span1">传世</span>
-                                    <span class="span2">麦香</span>
-                                </div>
-                                <img src="https://ccdn.goodq.top/caches/b2722f2617dd98e9cdb285b51047a21d/aHR0cHM6Ly81ZDdhMDE2MGIwZTdkLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDkvMzY4ZWVjOWEzNGU0NmIwYzY1MTFiMDEzZGRhMWE1MWQtOTAud2VicA_p_p100_p_3D_p_p100_p_3D.webp" alt="">
-                                <div class="list-title-content">
-                                    当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。
-                                </div>
-
-
-                                <img src="https://ccdn.goodq.top/caches/b2722f2617dd98e9cdb285b51047a21d/aHR0cHM6Ly81ZDdhMDE2MGIwZTdkLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDkvZjg2ZDE3Y2JjMDZjMWMwY2EwOTc3ODRjMTIxYzc4NmUtOTAud2VicA_p_p100_p_3D_p_p100_p_3D.webp" alt="">
-                            </div>
-                        </div>
-
-                        <div class="center-list">
-                            <div class="center-list-img">
-                                <img src="https://ccdn.goodq.top/caches/b2722f2617dd98e9cdb285b51047a21d/aHR0cHM6Ly81ZDdhMDE2MGIwZTdkLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDkvNTI4YzliODc2ZmNjYTE5ODQwODZkN2VkNGQ5OWMyNDMtOTAud2VicA_p_p100_p_3D_p_p100_p_3D.webp" alt="">
-
-                            </div>
-                            <div class="center-list-title">
-                                <div class="list-title-div">
-                                    <span class="span1">传世</span>
-                                    <span class="span2">麦香</span>
-                                </div>
-                                <img src="https://ccdn.goodq.top/caches/b2722f2617dd98e9cdb285b51047a21d/aHR0cHM6Ly81ZDdhMDE2MGIwZTdkLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDkvMzY4ZWVjOWEzNGU0NmIwYzY1MTFiMDEzZGRhMWE1MWQtOTAud2VicA_p_p100_p_3D_p_p100_p_3D.webp" alt="">
-                                <div class="list-title-content">
-                                    当今最领先的响应式自助建站平台，我们的流线式网页布局设计方案和可视化图文内容编辑模式让网站制作和维护成为一件轻松惬意的事。
-                                </div>
-
-
-                                <img src="https://ccdn.goodq.top/caches/b2722f2617dd98e9cdb285b51047a21d/aHR0cHM6Ly81ZDdhMDE2MGIwZTdkLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDkvZjg2ZDE3Y2JjMDZjMWMwY2EwOTc3ODRjMTIxYzc4NmUtOTAud2VicA_p_p100_p_3D_p_p100_p_3D.webp" alt="">
-                            </div>
-                        </div>
-                    </div>
 
 
                 </div>
 
-                <div class="rightbtn">></div>
             </div>
+
+                <div class="rightbtn">></div>
         </div>
     </div>
 

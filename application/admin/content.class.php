@@ -13,12 +13,14 @@ class content{
         $database=new db();
         $str="";
         $num="";
-
+        $recommend="";
         $this->db=$database->db;
         $this->getnum($num);
         $this->getoption($str);
+        $this->getrecommend($recommend);
         $smarty->assign("num",$num);
         $smarty->assign("style",$str);
+        $smarty->assign("recommend",$recommend);
         $smarty->display("admin/product.html");
 
     }
@@ -88,4 +90,33 @@ class content{
             header("location:/server/8.15/mvc/index.php/admin/content/int");
         }
     }
+    //推荐
+    private function getrecommend(&$recommend){
+        $result=$this->db->query("SELECT * FROM jiu,recommend as re WHERE jiu.jid=re.recommendid");
+        while ($row=$result->fetch_assoc()){
+            $recommend.='<tr><td> '.$row["recommendid"].' </td><td>'.$row["jname"].'  </td><td> <img src='.$row["jimg"].' alt="" style="width: 30px;height: 30px" > </td><td><a href="javascript:;"  id='.$row["id"].' recommendid="'.$row["recommendid"].'"  class="recommend">修改</a>  </td></tr>';
+        }
+    }
+    //修改推荐位
+    function editrecommend(){
+
+        $recommendid=$_POST["recommendid"];
+        $id=$_POST["id"];
+
+        $database=new db();
+        $this->db=$database->db;
+
+        $result=$this->db->query("select * from jiu where jid=".$recommendid);
+        $row=$result->fetch_assoc();
+
+        if(!$row){
+            echo "酒的id不正确";
+        }else{
+            $result=$this->db->query("update recommend set recommendid='$recommendid' where id=".$id);
+            header("location:/server/8.15/mvc/index.php/admin/content/int");
+        }
+
+
+    }
+
 }

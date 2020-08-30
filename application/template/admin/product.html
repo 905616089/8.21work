@@ -55,7 +55,7 @@
                 <td style='width: 25%;'>操作</td>
             </tr>
             </thead>
-            {$num}
+            {$recommend}
         </table>
     </div>
 
@@ -64,6 +64,7 @@
 
 </div>
 
+<!--//数据修改-->
 </div>
 
 <div class="fixdiv" style="width:700px;height: 100px;position: absolute;left: 0;bottom: 0;right: 0;top:0;margin: auto;box-shadow: 0 0 4px #000;background: white;display: none;z-index: 2">
@@ -86,9 +87,26 @@
     </div>
 </div>
 
-<div class="black" style="width: 100%;height: 100%;background: black;opacity: .6;position: absolute;left: 0;top:0;display: none" >
+<div class="black" style="width: 100%;height: 100%;background: black;opacity: .6;position: fixed;left: 0;top:0;display: none" >
 
 </div>
+<!--//推荐修改-->
+<div class="fixrecommend" style="width:700px;height: 100px;position: absolute;left: 0;bottom: 0;right: 0;top:0;margin: auto;box-shadow: 0 0 4px #000;background: white;display: none;z-index: 2">
+    <div class="close" style="float: right">
+        X
+    </div>
+    <div class="container">
+        <form class="form-inline" style="margin-top: 30px" action="/server/8.15/mvc/index.php/admin/content/editrecommend" method="post">
+            <input type="hidden" class="id" name="id"  id="id">
+            <div class="form-group">
+                <label for="recommendid">仅可修改推荐酒的id</label>
+                <input type="number" class="form-control" id="recommendid" name="recommendid">
+            </div>
+            <button type="submit" class="btn btn-info">修改</button>
+        </form>
+    </div>
+</div>
+
 
 
 </body>

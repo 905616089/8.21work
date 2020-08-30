@@ -27,6 +27,9 @@ class jiu {
             <td  style=\'width:16.7%;\'><img src='.$row["jimg"].' width="35px"></td>
             <td  style=\'width:16.7%;\'>'.$row["jcons"].'</td>
             <td style=\'width: 16.7%;\'>'.$row["jvales"].'</td>
+            <td  style=\'width:16.7%;\'>'.$row["jml"].'ml</td>
+            <td style=\'width: 16.7%;\'>'.$row["jvol"].'vol</td>
+            <td style=\'width: 16.7%;\'>'.$row["jp"].'°P</td>
             <td style="width: 16.7%;"><a href="/server/8.15/mvc/index.php/admin/jiu/edit?jid='.$row["jid"].'" jid="'.$row["jid"].'"  class="edit">修改 </a>  <a href="/server/8.15/mvc/index.php/admin/jiu/del?jid='.$row["jid"].'" attr="'.$row["jid"].'" class="remove">删除 </a></td></tr>';
         }
     }
@@ -49,10 +52,15 @@ class jiu {
         $jimg=$_POST["imgsrc"];
         $jvales=$_POST["jvales"];
         $jcons=$_POST["jcons"];
+        $jml=$_POST["jml"];
+        $jvol=$_POST["jvol"];
+        $jp=$_POST["jp"];
 
         $database=new db();
         $this->db=$database->db;
-        $this->db->query("update jiu set jname='$jname',jimg='$jimg',jvales='$jvales',jcons='$jcons' where jid=".$jid);
+
+        $this->db->query("update jiu set jname='$jname',jimg='$jimg',jvales='$jvales',jcons='$jcons',jml='$jml',jvol='$jvol',jp='$jp' where jid='$jid'");
+
 
         if($this->db->affected_rows>0){
             header("location:/server/8.15/mvc/index.php/admin/jiu/int");
@@ -78,9 +86,12 @@ class jiu {
         $jimg=$_POST["imgsrc"];
         $jvales=$_POST["jvales"];
         $jcons=$_POST["jcons"];
+        $jml=$_POST["jml"];
+        $jvol=$_POST["jvol"];
+        $jp=$_POST["jp"];
         $database=new db();
         $this->db=$database->db;
-        $this->db->query("insert into jiu (jname,jcons,jvales,jimg) values ('$jname','$jcons','$jvales','$jimg')");
+        $this->db->query("insert into jiu (jname,jcons,jvales,jimg,jml,jvol,jp) values ('$jname','$jcons','$jvales','$jimg','$jml','$jvol','$jp')");
 
         if($this->db->affected_rows>0){
             header("location:/server/8.15/mvc/index.php/admin/jiu/int");

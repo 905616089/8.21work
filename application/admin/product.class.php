@@ -11,12 +11,15 @@ class product{
         $smarty=new smarty();
         $style="";
         $num="";
+        $recommend="";
         $database=new db();
         $this->db=$database->db;
         $this->getnum($num);
         $this->getdata($style);
+        $this->recommend($recommend);
         $smarty->assign("num",$num);
         $smarty->assign("style",$style);
+        $smarty->assign("recommend",$recommend);
         $smarty->display("index/product.html");
     }
 
@@ -79,4 +82,30 @@ class product{
         }
 
     }
+    private function recommend(&$recommend){
+        $result=$this->db->query("SELECT * FROM jiu,recommend as re WHERE jiu.jid=re.recommendid");
+        while ($row=$result->fetch_assoc()){
+            $recommend.='<div class="center-list">
+                            <div class="center-list-img">
+                                <img src='.$row["jimg"].' alt="">
+
+                            </div>
+                            <div class="center-list-title">
+                                <div class="list-title-div">
+                                   
+                                    <span class="span2">'.$row["jname"].'</span>
+                                </div>
+                                <img src="https://ccdn.goodq.top/caches/b2722f2617dd98e9cdb285b51047a21d/aHR0cHM6Ly81ZDdhMDE2MGIwZTdkLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDkvMzY4ZWVjOWEzNGU0NmIwYzY1MTFiMDEzZGRhMWE1MWQtOTAud2VicA_p_p100_p_3D_p_p100_p_3D.webp" alt="">
+                                <div class="list-title-content">
+                                    '.$row["jcons"].'
+                                </div>
+
+
+                                  <div class="jiuvale">$'.$row["jvales"].'</div>
+                            </div>
+                        </div>';
+        }
+
+    }
+
 }

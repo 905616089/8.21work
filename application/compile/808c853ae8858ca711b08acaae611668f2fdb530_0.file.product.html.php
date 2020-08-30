@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-08-30 13:26:23
+/* Smarty version 3.1.34-dev-7, created on 2020-08-30 14:57:24
   from 'E:\wamp64\www\server\8.15\mvc\application\template\admin\product.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f4ba8ffc850c0_89804501',
+  'unifunc' => 'content_5f4bbe54c43c70_62995042',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '808c853ae8858ca711b08acaae611668f2fdb530' => 
     array (
       0 => 'E:\\wamp64\\www\\server\\8.15\\mvc\\application\\template\\admin\\product.html',
-      1 => 1598793946,
+      1 => 1598799413,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f4ba8ffc850c0_89804501 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f4bbe54c43c70_62995042 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
 <head>
@@ -91,7 +91,7 @@ admin/upload.js"><?php echo '</script'; ?>
                 <td style='width: 25%;'>操作</td>
             </tr>
             </thead>
-            <?php echo $_smarty_tpl->tpl_vars['num']->value;?>
+            <?php echo $_smarty_tpl->tpl_vars['recommend']->value;?>
 
         </table>
     </div>
@@ -101,6 +101,7 @@ admin/upload.js"><?php echo '</script'; ?>
 
 </div>
 
+<!--//数据修改-->
 </div>
 
 <div class="fixdiv" style="width:700px;height: 100px;position: absolute;left: 0;bottom: 0;right: 0;top:0;margin: auto;box-shadow: 0 0 4px #000;background: white;display: none;z-index: 2">
@@ -123,9 +124,26 @@ admin/upload.js"><?php echo '</script'; ?>
     </div>
 </div>
 
-<div class="black" style="width: 100%;height: 100%;background: black;opacity: .6;position: absolute;left: 0;top:0;display: none" >
+<div class="black" style="width: 100%;height: 100%;background: black;opacity: .6;position: fixed;left: 0;top:0;display: none" >
 
 </div>
+<!--//推荐修改-->
+<div class="fixrecommend" style="width:700px;height: 100px;position: absolute;left: 0;bottom: 0;right: 0;top:0;margin: auto;box-shadow: 0 0 4px #000;background: white;display: none;z-index: 2">
+    <div class="close" style="float: right">
+        X
+    </div>
+    <div class="container">
+        <form class="form-inline" style="margin-top: 30px" action="/server/8.15/mvc/index.php/admin/content/editrecommend" method="post">
+            <input type="hidden" class="id" name="id"  id="id">
+            <div class="form-group">
+                <label for="recommendid">仅可修改推荐酒的id</label>
+                <input type="number" class="form-control" id="recommendid" name="recommendid">
+            </div>
+            <button type="submit" class="btn btn-info">修改</button>
+        </form>
+    </div>
+</div>
+
 
 
 </body>

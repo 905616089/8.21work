@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-08-30 13:03:50
+/* Smarty version 3.1.34-dev-7, created on 2020-08-30 15:51:47
   from 'E:\wamp64\www\server\8.15\mvc\application\template\admin\editjius.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f4ba3b6ede935_19746201',
+  'unifunc' => 'content_5f4bcb13e51c07_57795101',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '8bc4265ab3152a5b375b4e1ae148c7648da90f96' => 
     array (
       0 => 'E:\\wamp64\\www\\server\\8.15\\mvc\\application\\template\\admin\\editjius.html',
-      1 => 1598792626,
+      1 => 1598802705,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f4ba3b6ede935_19746201 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f4bcb13e51c07_57795101 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
 <head>
@@ -76,6 +76,21 @@ admin/editjius.js"><?php echo '</script'; ?>
                 <label for="jvales"> 酒的价格</label>
                 <input type="text" name="jvales" id="jvales" value='<?php echo $_smarty_tpl->tpl_vars['row']->value["jvales"];?>
 ' class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="jml">酒的容量</label>
+                <input type="text" name="jml" id="jml" class="jml form-control" value='<?php echo $_smarty_tpl->tpl_vars['row']->value["jml"];?>
+'>
+            </div>
+            <div class="form-group">
+                <label for="jvol">酒精度</label>
+                <input type="text" name="jvol" id="jvol" class="jvol form-control" value='<?php echo $_smarty_tpl->tpl_vars['row']->value["jvol"];?>
+'>
+            </div>
+            <div class="form-group">
+                <label for="jp">原麦汁浓度</label>
+                <input type="text" name="jp" id="jp" class="jp form-control" value='<?php echo $_smarty_tpl->tpl_vars['row']->value["jp"];?>
+'>
             </div>
             <input type="submit" value="修改" class="btn btn-info">
         </form>

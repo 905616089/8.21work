@@ -346,7 +346,12 @@ html,body{
     font-weight: 700;
     color: #017D53;
 }
-
+.jiuvale{
+    font-size: 34px;
+    font-weight: 500;
+    color: #017D53;
+    margin-top: 30px;
+}
 .list-title-content{
     margin-top: 50px;
     font-size: 13px;

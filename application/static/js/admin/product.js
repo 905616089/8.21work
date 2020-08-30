@@ -29,5 +29,23 @@ $(function () {
         $(".black").css({
             display:"none",
         })
+        $(".fixrecommend").css({
+            display: "none",
+        })
+    })
+
+    $(".recommend").click(function () {
+        var recommendid=$(this).attr("recommendid");
+        var id=$(this).attr("id");
+        console.log(recommendid,id);
+        $("#recommendid").val(recommendid);
+        $("#id").val(id);
+        $(".fixrecommend").css({
+            display:"block",
+        })
+        $(".black").css({
+            display:"block",
+        })
+
     })
 })
