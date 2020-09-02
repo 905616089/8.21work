@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-08-30 15:46:22
+/* Smarty version 3.1.34-dev-7, created on 2020-08-31 06:57:40
   from 'E:\wamp64\www\server\8.15\mvc\application\template\admin\addjius.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f4bc9ce334322_80483432',
+  'unifunc' => 'content_5f4c9f64c1c501_16580667',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '1204830ba342a5136caeeca5b17b0816b73ceb35' => 
     array (
       0 => 'E:\\wamp64\\www\\server\\8.15\\mvc\\application\\template\\admin\\addjius.html',
-      1 => 1598802373,
+      1 => 1598857056,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f4bc9ce334322_80483432 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f4c9f64c1c501_16580667 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
 <head>
@@ -66,21 +66,21 @@ admin/upload.js"><?php echo '</script'; ?>
             </div>
             <div class="form-group">
                 <label for="jvales">酒的价格</label>
-                <input type="text" name="jvales" id="jvales" class="jvales form-control">
+                <input type="text" name="jvales" id="jvales" class="jvales form-control" style="width: 50%;">
             </div>
             <div class="form-group">
                 <label for="jml">酒的容量</label>
-                <input type="text" name="jml" id="jml" class="jml form-control">
+                <input type="text" name="jml" id="jml" class="jml form-control" style="width: 50%;">
             </div>
             <div class="form-group">
                 <label for="jvol">酒精度</label>
-                <input type="text" name="jvol" id="jvol" class="jvol form-control">
+                <input type="text" name="jvol" id="jvol" class="jvol form-control" style="width: 50%;">
             </div>
             <div class="form-group">
                 <label for="jp">原麦汁浓度</label>
-                <input type="text" name="jp" id="jp" class="jp form-control">
+                <input type="text" name="jp" id="jp" class="jp form-control" style="width: 50%;">
             </div>
-            <input type="submit" value="修改" class="btn btn-info">
+            <input type="submit" value="添加" class="btn btn-info">
         </form>
 
 

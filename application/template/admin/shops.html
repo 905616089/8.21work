@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{CSS_ADD}bootstrap.css">
+    <link rel="stylesheet" href="{CSS_ADD}admin/jiu.css">
+    <script src="{JS_ADD}jquery-3.5.1.min.js"></script>
+    <script src="{JS_ADD}admin/jiu.js"></script>
+    <script src="{JS_ADD}admin/upload.js"></script>
+</head>
+<body>
+<div class="box">
+    <h1>酒</h1>
+    <h3>此页仅作展示，如想修改请进酒的分类页进行管理</h3>
+    {if $data}
+    <table class="table table-bordered" style='table-layout:fixed;'>
+        <thead>
+        <tr>
+            <td  style='width:11.1%;'>酒的id</td>
+            <td  style='width:11.1%;'>酒的名字</td>
+            <td  style='width:11.1%;'>酒的图片</td>
+            <td  style='width:11.1%;'>酒的详情</td>
+            <td style='width: 11.1%;'>酒的价格</td>
+            <td  style='width:11.1%;'>酒的容量</td>
+            <td  style='width:11.1%;'>酒精度</td>
+            <td style='width: 11.1%;'>原麦汁浓度</td>
+        </tr>
+        </thead>
+        {$data}
+    </table>
+    {else}
+    <table>
+        <tr>
+            <td>没有数据</td>
+        </tr>
+    </table>
+
+    {/if}
+
+
+
+
+
+</div>
+</body>
+</html>

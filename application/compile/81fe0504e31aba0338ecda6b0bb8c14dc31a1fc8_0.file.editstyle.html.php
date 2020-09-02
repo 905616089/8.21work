@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-08-30 10:44:49
+/* Smarty version 3.1.34-dev-7, created on 2020-08-31 15:27:21
   from 'E:\wamp64\www\server\8.15\mvc\application\template\admin\editstyle.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f4b8321519f09_34271498',
+  'unifunc' => 'content_5f4d16d9d60753_40833344',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '81fe0504e31aba0338ecda6b0bb8c14dc31a1fc8' => 
     array (
       0 => 'E:\\wamp64\\www\\server\\8.15\\mvc\\application\\template\\admin\\editstyle.html',
-      1 => 1598783825,
+      1 => 1598887636,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f4b8321519f09_34271498 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f4d16d9d60753_40833344 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
 <head>
@@ -43,7 +43,7 @@ admin/upload.js"><?php echo '</script'; ?>
 >
     <?php echo '<script'; ?>
  src="<?php echo JS_ADD;?>
-admin/editjiu.js"><?php echo '</script'; ?>
+admin/editstyle.js"><?php echo '</script'; ?>
 >
 </head>
 <body>

@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{CSS_ADD}bootstrap.css">
+    <link rel="stylesheet" href="{CSS_ADD}admin/editjiu.css">
+    <script src="{JS_ADD}jquery-3.5.1.min.js"></script>
+    <script src="{JS_ADD}admin/upload.js"></script>
+    <script src="{JS_ADD}tinymce/js/tinymce/tinymce.min.js"></script>
+    <script src="{JS_ADD}admin/editboke.js"></script>
+</head>
+<body>
+<div class="container ba">
+    <div class="pannel editpannel">
+        <form action="/server/8.15/mvc/index.php/admin/boke/addtboke" method="post">
+<!--            <input type="hidden" name="cid" value='{$data["cid"]}' >-->
+            <input type="hidden" name="pid" value='{$row["cid"]}' class="pid">
+            <div class="form-group">
+                <label for="type"> 所属分类 </label>
+                <input type="text" name="type" id="type"  class="form-control" value='{$row["cname"]}' readonly="readonly" style="width: 30%">
+            </div>
+            <div class="form-group">
+                <label for="title"> 标题 </label>
+                <input type="text" name="title" id="title"  class="form-control">
+            </div>
+            <div class="form-group">
+
+                <label for="imgsrc" >图片</label>
+                <div id="imgsrc">
+                    <input type="hidden" class="imgsrc" name="imgsrc" >
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="littlecons"> 博客概要 </label>
+                <input type="text" name="littlecons" id="littlecons"  class="form-control">
+            </div>
+            <div class="form-group">
+                <label for="cons">博客详情</label>
+                <textarea class="form-control" rows="3" name="cons" id="cons"></textarea>
+            </div>
+
+            <input type="submit" value="添加" class="btn btn-info">
+        </form>
+
+
+    </div>
+</div>
+</body>
+</html>

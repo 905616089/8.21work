@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-08-30 11:00:21
+/* Smarty version 3.1.34-dev-7, created on 2020-08-31 04:35:05
   from 'E:\wamp64\www\server\8.15\mvc\application\template\admin\editjiu.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f4b86c572d3a6_75914840',
+  'unifunc' => 'content_5f4c7df9c32a89_83779899',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ba87d1322e8f0600c43b816fc6784fe7a004c226' => 
     array (
       0 => 'E:\\wamp64\\www\\server\\8.15\\mvc\\application\\template\\admin\\editjiu.html',
-      1 => 1598784770,
+      1 => 1598791449,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f4b86c572d3a6_75914840 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f4c7df9c32a89_83779899 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
 <head>
@@ -98,6 +98,12 @@ $_smarty_tpl->smarty->ext->_foreach->restore($_smarty_tpl, 1);?>
 
 
 </div>
+</div>
+
+<div class="fixdiv" style="width:500px;height: 200px;position: absolute;left: 0;bottom: 0;right: 0;top:0;margin: auto">
+
+</div>
+
 
 
 

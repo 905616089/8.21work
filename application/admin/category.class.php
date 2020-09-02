@@ -44,7 +44,7 @@ class category {
 
         $this->db->query("delete from jform where jid=".$jid);
             if($this->db->affected_rows>0){
-                header("localhost:/server/8.15/mvc/index.php/admin/category/int");
+                header("location:/server/8.15/mvc/index.php/admin/category/int");
             }
 
     }

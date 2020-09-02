@@ -5,22 +5,43 @@ if(!defined("MVC")){
 use \libs\smarty;
 use \libs\db;
 use \libs\upload;
-
+use \libs\pages;
 class jiu {
     function int(){
+        $sql="select *  from jiu where 1=1";
+        if(isset($_POST["jids"])&&!empty($_POST["jids"])){
+            $sql.=" and jid=".$_POST["jids"];
+        }
+        if(isset($_POST["jnames"])&&!empty($_POST["jnames"])){
+            $sql.=" and jname like '%".$_POST["jnames"]."%'";
+        }
+        
+
+
         $smarty=new smarty();
         $database=new db();
         $this->db=$database->db;
         $str="";
-        $this->getjiu($str);
-//        var_dump($str);
-//        exit();
+        
+        $pages=new pages();
+        $result=$this->db->query($sql);
+        $pages->total=$result->num_rows;
+
+        $foot=$pages->show();
+        $sql.=$pages->limit;
+
+
+
+        $this->getjiu($str,$sql);
         $smarty->assign("data",$str);
+        $smarty->assign("foot",$foot);
         $smarty->display("admin/jiu.html");
     }
 
-    private function getjiu(&$str){
-        $request=$this->db->query("select * from jiu");
+    private function getjiu(&$str,$sql){
+
+        $request=$this->db->query($sql);
+
         while ($row= $request->fetch_assoc()){
             $str.=' <tr><td  style=\'width:16.7%;\'>'.$row["jid"].'</td>
             <td  style=\'width:16.7%;\'>'.$row["jname"].'</td>

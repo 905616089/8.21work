@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-08-30 15:45:26
+/* Smarty version 3.1.34-dev-7, created on 2020-08-31 06:56:25
   from 'E:\wamp64\www\server\8.15\mvc\application\template\admin\jiu.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f4bc99665c924_95287172',
+  'unifunc' => 'content_5f4c9f19970ce2_44039454',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '20c5fa2661460b9ae388b880951cef690294dfb1' => 
     array (
       0 => 'E:\\wamp64\\www\\server\\8.15\\mvc\\application\\template\\admin\\jiu.html',
-      1 => 1598802321,
+      1 => 1598856983,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f4bc99665c924_95287172 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f4c9f19970ce2_44039454 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
 <head>
@@ -51,7 +51,20 @@ admin/upload.js"><?php echo '</script'; ?>
     <h1>酒</h1>
     <form action="/server/8.15/mvc/index.php/admin/jiu/addjiu" method="post">
 
-        <input type="submit" value="添加酒" class="btn btn-info add">
+        <input type="submit" value="添加" class="btn btn-info add">
+
+    </form>
+    <h4 style="text-align: right">查询酒</h4>
+    <form action="/server/8.15/mvc/index.php/admin/jiu/int" method="post">
+
+        <div class="form-group" style="text-align: right">
+            <label for="jids"> 酒的id</label>
+            <input type="text" name="jids" id="jids"  class="form-control" style="width: 20%;display: inline-block">
+            <label for="jnames"> 酒的名字</label>
+            <input type="text" name="jnames" id="jnames"  class="form-control" style="width: 20%;display: inline-block">
+            <input type="submit" class="btn btn-info info" style="display: inline-block">
+        </div>
+
 
     </form>
     <?php if ($_smarty_tpl->tpl_vars['data']->value) {?>
@@ -82,7 +95,12 @@ admin/upload.js"><?php echo '</script'; ?>
     <?php }?>
 
 
+<div class="conntainer">
+    <div class="foot" style="text-align: center">
+        <?php echo $_smarty_tpl->tpl_vars['foot']->value;?>
 
+    </div>
+</div>
 
 
 </div>

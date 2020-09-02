@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-08-30 15:25:23
+/* Smarty version 3.1.34-dev-7, created on 2020-09-02 14:23:35
   from 'E:\wamp64\www\server\8.15\mvc\application\template\index\product.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f4bc4e3d10ee0_30365748',
+  'unifunc' => 'content_5f4faae7141aa0_05877982',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '791c04ad5882ed4017eda8272232d93980522802' => 
     array (
       0 => 'E:\\wamp64\\www\\server\\8.15\\mvc\\application\\template\\index\\product.html',
-      1 => 1598801115,
+      1 => 1599056613,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f4bc4e3d10ee0_30365748 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f4faae7141aa0_05877982 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -229,7 +229,7 @@ index/product.css">
         <div class="close">X</div>
         <div class="contentnav">
             <div class="list2">
-                <a href="demo.html">网站首页
+                <a href="/server/8.15/mvc/index.php/admin/demo/int">网站首页
                     &nbsp-
                     &nbsp
                     <div class="English1">
@@ -238,7 +238,7 @@ index/product.css">
                 </a>
             </div>
             <div class="list1">
-                <a href="#">品牌介绍
+                <a href="/server/8.15/mvc/index.php/admin/product/int">品牌介绍
                     &nbsp-
                     &nbsp
                     <div class="English">
@@ -247,7 +247,7 @@ index/product.css">
                 </a>
             </div>
             <div class="list2">
-                <a href="center.html">产品中心
+                <a href="/server/8.15/mvc/index.php/admin/center/int">产品中心
                     &nbsp-
                     &nbsp
                     <div class="English1">
@@ -256,7 +256,7 @@ index/product.css">
                 </a>
             </div>
             <div class="list2">
-                <a href="boke.html">博客资讯
+                <a href="/server/8.15/mvc/index.php/admin/indexboke/int">博客资讯
                     &nbsp-
                     &nbsp
                     <div class="English1">
@@ -265,7 +265,7 @@ index/product.css">
                 </a>
             </div>
             <div class="list2">
-                <a href="us.html">联系我们
+                <a href="/server/8.15/mvc/index.php/admin/indexus/int">联系我们
                     &nbsp-
                     &nbsp
                     <div class="English1">
@@ -283,6 +283,7 @@ jquery-3.5.1.min.js"><?php echo '</script'; ?>
  src="<?php echo JS_ADD;?>
 index/product.js"><?php echo '</script'; ?>
 >
+    </div>
 </body>
 </html><?php }
 }

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="{CSS_ADD}bootstrap.css">
+    <link rel="stylesheet" href="{CSS_ADD}admin/editjiu.css">
+    <script src="{JS_ADD}jquery-3.5.1.min.js"></script>
+    <script src="{JS_ADD}admin/upload.js"></script>
+
+</head>
+<body>
+<div class="container ba">
+    <div class="pannel editpannel">
+        <form action="/server/8.15/mvc/index.php/admin/boke/edittype" method="post">
+            <input type="hidden" name="cid" value='{$data["cid"]}' class="cid">
+            <div class="form-group">
+                <label for="cname"> 类型名称</label>
+                <input type="text" name="cname" id="cname" value='{$data["cname"]}' class="form-control">
+            </div>
+            <input type="submit" value="修改" class="btn btn-info">
+        </form>
+
+
+    </div>
+</div>
+</body>
+</html>

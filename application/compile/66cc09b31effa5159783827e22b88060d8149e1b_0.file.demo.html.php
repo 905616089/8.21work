@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-08-27 13:10:52
+/* Smarty version 3.1.34-dev-7, created on 2020-09-02 14:10:10
   from 'E:\wamp64\www\server\8.15\mvc\application\template\index\demo.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f47b0dcb696f0_70269943',
+  'unifunc' => 'content_5f4fa7c2ca5fa1_65123659',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '66cc09b31effa5159783827e22b88060d8149e1b' => 
     array (
       0 => 'E:\\wamp64\\www\\server\\8.15\\mvc\\application\\template\\index\\demo.html',
-      1 => 1598533851,
+      1 => 1599055809,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f47b0dcb696f0_70269943 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f4fa7c2ca5fa1_65123659 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 
@@ -62,7 +62,7 @@ index/demo.css">
                 </a>
             </div>
             <div class="list2">
-                <a href="product.html">品牌介绍
+                <a href="/server/8.15/mvc/index.php/admin/product/int">品牌介绍
                     &nbsp-
                     &nbsp
                     <div class="English1">
@@ -71,7 +71,7 @@ index/demo.css">
                 </a>
             </div>
             <div class="list2">
-                <a href="center.html">产品中心
+                <a href="/server/8.15/mvc/index.php/admin/center/int">产品中心
                     &nbsp-
                     &nbsp
                     <div class="English1">
@@ -80,7 +80,7 @@ index/demo.css">
                 </a>
             </div>
             <div class="list2">
-                <a href="boke.html">博客资讯
+                <a href="/server/8.15/mvc/index.php/admin/indexboke/int">博客资讯
                     &nbsp-
                     &nbsp
                     <div class="English1">
@@ -89,7 +89,7 @@ index/demo.css">
                 </a>
             </div>
             <div class="list2">
-                <a href="us.html">联系我们
+                <a href="/server/8.15/mvc/index.php/admin/indexus/int">联系我们
                     &nbsp-
                     &nbsp
                     <div class="English1">

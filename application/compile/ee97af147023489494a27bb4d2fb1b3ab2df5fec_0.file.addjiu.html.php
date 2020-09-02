@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-08-28 12:04:37
+/* Smarty version 3.1.34-dev-7, created on 2020-08-31 07:30:54
   from 'E:\wamp64\www\server\8.15\mvc\application\template\admin\addjiu.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f48f2d5090097_57640524',
+  'unifunc' => 'content_5f4ca72e4333b3_40281300',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ee97af147023489494a27bb4d2fb1b3ab2df5fec' => 
     array (
       0 => 'E:\\wamp64\\www\\server\\8.15\\mvc\\application\\template\\admin\\addjiu.html',
-      1 => 1598616274,
+      1 => 1598859051,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f48f2d5090097_57640524 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f4ca72e4333b3_40281300 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
 <head>
@@ -66,11 +66,12 @@ admin/upload.js"><?php echo '</script'; ?>
                 <textarea class="form-control" rows="3" name="jcons" id="jcons"></textarea>
             </div>
             <div class="form-group">
+                <label for="jval" >酒的含量("请选择四张图片")</label>
                 <div class="jval1">
                     <input type="hidden" class="jval" name="jval" >
                 </div>
             </div>
-            <input type="submit" value="修改" class="btn btn-info">
+            <input type="submit" value="添加" class="btn btn-info">
         </form>
 
 
