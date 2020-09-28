@@ -66,4 +66,9 @@ class index{
 
         $code->out();
     }
+
+    function indexshow(){
+        $smarty=new smarty();
+        $smarty->display("admin/indexshow.html") ;
+    }
 }

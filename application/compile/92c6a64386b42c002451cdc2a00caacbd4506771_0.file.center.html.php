@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-09-02 14:18:47
+/* Smarty version 3.1.34-dev-7, created on 2020-09-07 11:51:43
   from 'E:\wamp64\www\server\8.15\mvc\application\template\index\center.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f4fa9c7cc3557_60824523',
+  'unifunc' => 'content_5f561ecfaa36e5_48556166',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '92c6a64386b42c002451cdc2a00caacbd4506771' => 
     array (
       0 => 'E:\\wamp64\\www\\server\\8.15\\mvc\\application\\template\\index\\center.html',
-      1 => 1599056325,
+      1 => 1599479502,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f4fa9c7cc3557_60824523 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f561ecfaa36e5_48556166 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 
@@ -68,9 +68,9 @@ index/center.css">
 
             </div>
             <div class="btnlist">
-             
-                    <div class="btn1">1</div>
-                    <div class="btn2">2</div>
+             <?php echo $_smarty_tpl->tpl_vars['foot']->value;?>
+
+
                
             </div>
         </div>

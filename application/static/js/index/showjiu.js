@@ -26,3 +26,33 @@ topButton.onclick=function(){
 closes.onclick=function(){
     $(".navigationWeb").animate({right:-400+"px"},500)
 }
+$(".imglist-img").mouseover (function () {
+    $(this).css({
+        transform:"scale(1.1)",
+    })
+})
+$(".imglist-img").mouseout (function () {
+    $(this).css({
+        transform:"scale(1)",
+    })
+})
+
+var i=1;
+function f() {
+    if(i>$(".imgbox-img").length-3){
+        i=0;
+    }
+    console.log();
+    var width=$(".imgbox-img")[0].offsetWidth;
+    console.log($(".imgbox-img")[0].offsetWidth);
+    $(".banner-img-box").animate({left:-i*width+"px"},500);
+    i++;
+}
+var t=setInterval(f,5000);
+window.onblur=function(){
+    console.log("失去焦点")
+    clearInterval(t);
+}
+window.onfocus=function(){
+    var t=setInterval(f,5000);
+}

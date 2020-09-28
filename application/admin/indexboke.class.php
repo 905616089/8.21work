@@ -29,8 +29,10 @@ class indexboke{
         $row=$result->fetch_assoc();
         $cid=$row["cid"];
         $result=$this->db->query("select * from bokecontent where pid=".$cid);
+
         while ($row=$result->fetch_assoc()){
-            $data.='<div class="left-main"  id="'.$row["id"].'">
+            $data.=' 
+            <div class="left-main"  id="'.$row["id"].'">
                     <img src='.$row["img"].'
                         alt="" class="main-img">
 
@@ -65,8 +67,10 @@ class indexboke{
         $this->db=$database->db;
         $data='';
         $result=$this->db->query("select * from bokecontent where pid=".$pid);
+
         while ($row=$result->fetch_assoc()){
-            $data.='<div class="left-main" id="'.$row["id"].'">
+            $data.=' 
+            <div class="left-main" id="'.$row["id"].'">
                     <img src='.$row["img"].'
                         alt="" class="main-img">
 
@@ -89,18 +93,19 @@ class indexboke{
         $this->db=$database->db;
         $data='';
         $result=$this->db->query("select * from bokecontent where id=".$id);
+
         while ($row=$result->fetch_assoc()){
-            $data='<div class="left-main1" id="'.$row["id"].'">
+
+            $data='
+            <div class="left-main1" id="'.$row["id"].'">
                     <img src='.$row["img"].'
                         alt="" class="main-img">
-
                     <h1>
                         '.$row["title"].'
                     </h1>
                     <div class="main-text">
                         '.$row["cons"].'
                     </div>
-                  
                 </div>';
         }
         echo $data;
@@ -112,8 +117,10 @@ class indexboke{
         $this->db=$database->db;
         $data='';
         $result=$this->db->query("select * from bokecontent where id=".$id);
+
         while ($row=$result->fetch_assoc()){
-            $data='<div class="left-main1" id="'.$row["id"].'">
+            $data='
+            <div class="left-main1" id="'.$row["id"].'">
                     <img src='.$row["img"].'
                         alt="" class="main-img">
 

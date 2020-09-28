@@ -31,14 +31,21 @@ title[0].style.display="block";
 
 
 $(".title2-text").click(function(){
+    $(".box").css({display:"inline-block"});
   var pid=$(this).attr("value");
   console.log(pid);
+    $(document).scrollTop(300);
   $.ajax({
       url:"/server/8.15/mvc/index.php/admin/indexboke/btn",
       data:{pid},
       async:false,
       success:function (e) {
-          $(".center-left1").html(e);
+          setTimeout(function () {
+              $(".box").css({display:"none"});
+              $(".center-left2").html(e);
+          },2000);
+
+
       },
       error:function (e) {
           console.log(e);
@@ -48,15 +55,20 @@ $(".title2-text").click(function(){
 
 
     $(".center-left1 ").delegate('.left-main', 'click', function () {
+        $(".box").css({display:"inline-block"});
+        $(document).scrollTop(300);
         var id=$(this).attr("id");
+        let that=this;
         console.log(id);
         $.ajax({
             url: "/server/8.15/mvc/index.php/admin/indexboke/boke",
             data: {id},
             async:false,
             success: function (e) {
-   
-                $(".center-left1").html(e);
+                setTimeout(function () {
+                    $(".box").css({display:"none"});
+                    $(".center-left2").html(e);
+                },2000);
             },
             error: function (e) {
                 console.log(e);
@@ -65,6 +77,8 @@ $(".title2-text").click(function(){
 })
 
     $(".right-imglist").delegate(".imglist-div","click",function () {
+        $(".box").css({display:"inline-block"});
+        $(document).scrollTop(300);
         var id=$(this).attr("id");
         console.log(id);
         $.ajax({
@@ -72,8 +86,13 @@ $(".title2-text").click(function(){
             data: {id},
             async:false,
             success: function (e) {
+                setTimeout(function () {
 
-                $(".center-left1").html(e);
+                    $(".box").css({display:"none"});
+
+                    $(".center-left2").html(e);
+
+                },2000);
             },
             error: function (e) {
                 console.log(e);

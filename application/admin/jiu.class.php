@@ -8,29 +8,24 @@ use \libs\upload;
 use \libs\pages;
 class jiu {
     function int(){
-        $sql="select *  from jiu where 1=1";
+        $sql="select *  from jiu where 1=1 ";
         if(isset($_POST["jids"])&&!empty($_POST["jids"])){
-            $sql.=" and jid=".$_POST["jids"];
+            $sql.=" and jid=".$_POST["jids"]." ";
         }
         if(isset($_POST["jnames"])&&!empty($_POST["jnames"])){
-            $sql.=" and jname like '%".$_POST["jnames"]."%'";
+            $sql.=" and jname like '%".$_POST["jnames"]."%' ";
         }
-        
-
-
         $smarty=new smarty();
         $database=new db();
         $this->db=$database->db;
         $str="";
-        
         $pages=new pages();
         $result=$this->db->query($sql);
         $pages->total=$result->num_rows;
-
         $foot=$pages->show();
+//
+//        $sql.='order by jid ';
         $sql.=$pages->limit;
-
-
 
         $this->getjiu($str,$sql);
         $smarty->assign("data",$str);
@@ -39,7 +34,6 @@ class jiu {
     }
 
     private function getjiu(&$str,$sql){
-
         $request=$this->db->query($sql);
 
         while ($row= $request->fetch_assoc()){
@@ -80,7 +74,7 @@ class jiu {
         $database=new db();
         $this->db=$database->db;
 
-        $this->db->query("update jiu set jname='$jname',jimg='$jimg',jvales='$jvales',jcons='$jcons',jml='$jml',jvol='$jvol',jp='$jp' where jid='$jid'");
+        $this->db->query("update jiu set jname='$jname',jimg='$jimg',jvales='$jvales',jcons='$jcons',jml='$jml',jvol='$jvol',jp='$jp' where jid='$jid'  ");
 
 
         if($this->db->affected_rows>0){

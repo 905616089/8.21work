@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-09-02 14:22:27
+/* Smarty version 3.1.34-dev-7, created on 2020-09-25 13:18:28
   from 'E:\wamp64\www\server\8.15\mvc\application\template\index\us.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f4faaa32dfa98_44625192',
+  'unifunc' => 'content_5f6dee245e37d3_23237662',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '39c701eb2c4b4a7fe6d9caaebe9284aed2d06bbc' => 
     array (
       0 => 'E:\\wamp64\\www\\server\\8.15\\mvc\\application\\template\\index\\us.html',
-      1 => 1599056543,
+      1 => 1601039907,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f4faaa32dfa98_44625192 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f6dee245e37d3_23237662 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,6 +29,9 @@ function content_5f4faaa32dfa98_44625192 (Smarty_Internal_Template $_smarty_tpl)
     <title>仅供学习使用，侵删</title>
     <link rel="stylesheet" href="<?php echo CSS_ADD;?>
 index/us.css">
+
+
+
 </head>
 <body>
      <!-- 顶部导航栏 -->
@@ -58,23 +61,24 @@ index/us.css">
         <div class="content">
             <div class="content-center">
                 <div class="lists1">
-
                     <?php echo $_smarty_tpl->tpl_vars['message']->value;?>
 
                     <?php echo $_smarty_tpl->tpl_vars['data']->value;?>
 
-
                 </div>
-                <div class="lists2">
+                <form class="lists2">
                     <div class="first">
-                        <input type="text" placeholder="姓名">
-                        <input type="text" placeholder="邮箱">
+                        <input type="text" placeholder="姓名" name="user">
+
                     </div>
-                    <textarea name="" id="" cols="25" rows="3" placeholder="内容"></textarea>
-                    <button>
+                    <div class="first">
+                        <input type="email" placeholder="邮箱" name="email">
+                    </div>
+                    <textarea name="cons" id="" cols="25" rows="3" placeholder="内容"></textarea>
+                    <button class="from-button">
                         提交
                     </button>
-                </div>
+                </form>
             </div>
         </div>
         <div class="map">
@@ -200,6 +204,10 @@ index/us.css">
     <?php echo '<script'; ?>
  src="<?php echo JS_ADD;?>
 jquery-3.5.1.min.js"><?php echo '</script'; ?>
+>
+     <?php echo '<script'; ?>
+ src="<?php echo JS_ADD;?>
+jquery.validate.min"><?php echo '</script'; ?>
 >
     <?php echo '<script'; ?>
  src="<?php echo JS_ADD;?>

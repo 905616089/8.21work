@@ -116,8 +116,24 @@ class us{
         }
     }
 
+    function usemessage(){
+        $smarty=new smarty();
+        $database=new db();
+        $this->db=$database->db;
+        $data="";
+        $this->getdisplayusemessage($data);
+        $smarty->assign("data",$data);
+        $smarty->display("admin/displayusemeeage.html");
+    }
 
-
+    function getdisplayusemessage(&$data){
+        $request=$this->db->query("select * from updates order by date desc ");
+//        var_dump($request->fetch_assoc());
+//        exit();
+        while ($row=$request->fetch_assoc()){
+            $data.='<tr><td>'.$row["id"].'</td><td>'.$row["user"].'</td><td>'.$row["cons"].'</td><td>'.$row["date"].'</td></tr>';
+        }
+    }
 
 
 }

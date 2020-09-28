@@ -5,6 +5,7 @@ if(!defined("MVC")){
 use \libs\smarty;
 use \libs\db;
 use \libs\upload;
+use \libs\pages;
 
 class product{
     function int(){
@@ -14,12 +15,14 @@ class product{
         $recommend="";
         $database=new db();
         $this->db=$database->db;
+
         $this->getnum($num);
         $this->getdata($style);
         $this->recommend($recommend);
         $smarty->assign("num",$num);
         $smarty->assign("style",$style);
         $smarty->assign("recommend",$recommend);
+
         $smarty->display("index/product.html");
     }
 

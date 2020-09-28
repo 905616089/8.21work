@@ -41,11 +41,8 @@ class demo{
                         <div class="content-title">
                             '.$row["jcons"].'
                         </div>
-
-
                     </div>
                 </div>
-
             </div>
             <div class="container-center">
                 <img src="'.$row["jimg"].'"

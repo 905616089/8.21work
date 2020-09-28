@@ -1,6 +1,4 @@
-
 $(function () {
-    console.log(1);
     $(".form-horizontal").validate({
         rules:{
             user:{
@@ -23,6 +21,4 @@ $(function () {
             }
         }
     })
-
-
 })

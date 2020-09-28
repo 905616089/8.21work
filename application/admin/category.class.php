@@ -29,7 +29,7 @@ class category {
     }
 //获取酒
     function jiuOption(&$str){
-        $result=$this->db->query("select * from jform");
+        $result=$this->db->query("select * from jform ");
         while ($row=$result->fetch_assoc()){
             $str.='<tr attr="'.$row["jid"].'"><td>'.$row["jname"].'</td> <td>'.$row["jimg"].'</td><td>'.$row["jcons"].'</td><td>'.$row["jval"].'</td><td><a href="/server/8.15/mvc/index.php/admin/category/editshow?jid='.$row["jid"].'" attr="'.$row["jid"].'" class="edit">修改</a>  <a href="/server/8.15/mvc/index.php/admin/category/deljiu?jid='.$row["jid"].'" attr="'.$row["jid"].'" class="remove">删除</a></td></tr>';
         }

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-09-02 14:23:35
+/* Smarty version 3.1.34-dev-7, created on 2020-09-14 11:32:35
   from 'E:\wamp64\www\server\8.15\mvc\application\template\index\product.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f4faae7141aa0_05877982',
+  'unifunc' => 'content_5f5f54d3490cc2_17336648',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '791c04ad5882ed4017eda8272232d93980522802' => 
     array (
       0 => 'E:\\wamp64\\www\\server\\8.15\\mvc\\application\\template\\index\\product.html',
-      1 => 1599056613,
+      1 => 1600083152,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f4faae7141aa0_05877982 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f5f54d3490cc2_17336648 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,6 +29,7 @@ function content_5f4faae7141aa0_05877982 (Smarty_Internal_Template $_smarty_tpl)
     <title>仅供学习使用，侵删</title>
     <link rel="stylesheet" href="<?php echo CSS_ADD;?>
 index/product.css">
+
 </head>
 <body>
         <!-- 顶部导航栏 -->
@@ -75,10 +76,9 @@ index/product.css">
             </div>
 
         </div>
+    </div>
+        <div class="container">
         <div class="container-img">
-
-            <img src="https://ccdn.goodq.top/caches/b2722f2617dd98e9cdb285b51047a21d/aHR0cHM6Ly81ZDdhMDE2MGIwZTdkLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDkvODc1OTBhOTBjMjNiYWY2NWZmNjlhYzVkMDIwYzdlOGMtOTAud2VicA_p_p100_p_3D_p_p100_p_3D.webp" alt="" class="container-mainimg">
-
             <div class="container-img-img1">
                 <div class="container-img-img2">
                     <div class="border">
@@ -115,51 +115,31 @@ index/product.css">
                   
                 </div>
             </div>
+
         </div>
-        
-        <div class="number">
-            <div class="number-container">
-                <?php echo $_smarty_tpl->tpl_vars['num']->value;?>
-
-<!--                <div class="number-container-block">-->
-<!--                    <div class="num-value"></div>-->
-<!--                    <div class="num-title">-->
-<!--                        全品种类酒-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="number-container-block">-->
-<!--                    <div class="num-value"></div>-->
-<!--                    <div class="num-title">-->
-<!--                        VIP至尊用户-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--                <div class="number-container-block">-->
-<!--                    <div class="num-value"></div>-->
-<!--                    <div class="num-title">-->
-<!--                        全球线下实体店铺-->
-<!--                    </div>-->
-<!--                </div>-->
-            </div>
         </div>
+<div class="container">
+    <div class="number">
+        <div class="number-container">
+            <?php echo $_smarty_tpl->tpl_vars['num']->value;?>
 
-
-        <div class="tablelist">
-            <div class="tablelist-center">
-                <div class="leftbtn"><</div>
-                <div class="center-div">
-                    <div class="center-img">
-                        <?php echo $_smarty_tpl->tpl_vars['recommend']->value;?>
-
-
-
-
-                </div>
-
-            </div>
-
-                <div class="rightbtn">></div>
         </div>
     </div>
+
+
+    <div class="tablelist">
+        <div class="tablelist-center">
+            <div class="leftbtn"><</div>
+            <div class="center-div">
+                <div class="center-img">
+                    <?php echo $_smarty_tpl->tpl_vars['recommend']->value;?>
+
+                </div>
+            </div>
+            <div class="rightbtn">></div>
+        </div>
+    </div>
+</div>
 
     <!-- 底部 -->
 

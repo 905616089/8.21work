@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-09-02 14:17:13
+/* Smarty version 3.1.34-dev-7, created on 2020-09-26 00:43:15
   from 'E:\wamp64\www\server\8.15\mvc\application\template\index\showjiu.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f4fa96916e017_85299203',
+  'unifunc' => 'content_5f6e8ea321f618_38096223',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd65edca73900f778ee529be2ae73084e8cae2fd1' => 
     array (
       0 => 'E:\\wamp64\\www\\server\\8.15\\mvc\\application\\template\\index\\showjiu.html',
-      1 => 1599056220,
+      1 => 1601080983,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f4fa96916e017_85299203 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f6e8ea321f618_38096223 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -64,6 +64,51 @@ index/showjiu.css">
 
 
     </div>
+
+    <div class="banner1">
+        <div class="banner1-imgbox">
+            <div class="banner-img-box">
+                <?php echo $_smarty_tpl->tpl_vars['others']->value;?>
+
+<!--                <div class="imgbox-img">-->
+<!--                    <a href="javascript:;" >-->
+<!--                    <img src="https://ccdn.goodq.top/caches/b2722f2617dd98e9cdb285b51047a21d/aHR0cHM6Ly81ZDdhMDE2MGIwZTdkLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDkvZjljNjdkYmE3MmJiYWQyODA1MGQ5NjViYjZlNTcxN2YtNDAweDQwMC05MC53ZWJw.webp" alt="" class="imglist-img">-->
+<!--                     <div class="imglist-text" >瓦伦丁小麦白啤</div>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--                <div class="imgbox-img">-->
+<!--                    <a href="javascript:;" >-->
+<!--                        <img src="https://ccdn.goodq.top/caches/b2722f2617dd98e9cdb285b51047a21d/aHR0cHM6Ly81ZDdhMDE2MGIwZTdkLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDkvZjljNjdkYmE3MmJiYWQyODA1MGQ5NjViYjZlNTcxN2YtNDAweDQwMC05MC53ZWJw.webp" alt="" class="imglist-img">-->
+<!--                        <div class="imglist-text" >瓦伦丁小麦白啤</div>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--                <div class="imgbox-img"><a href="javascript:;" >-->
+<!--                    <img src="https://ccdn.goodq.top/caches/b2722f2617dd98e9cdb285b51047a21d/aHR0cHM6Ly81ZDdhMDE2MGIwZTdkLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDkvZjljNjdkYmE3MmJiYWQyODA1MGQ5NjViYjZlNTcxN2YtNDAweDQwMC05MC53ZWJw.webp" alt="" class="imglist-img">-->
+<!--                    <div class="imglist-text" >瓦伦丁小麦白啤</div>-->
+<!--                </a></div>-->
+<!--                <div class="imgbox-img"><a href="javascript:;" >-->
+<!--                    <img src="https://ccdn.goodq.top/caches/b2722f2617dd98e9cdb285b51047a21d/aHR0cHM6Ly81ZDdhMDE2MGIwZTdkLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDkvZjljNjdkYmE3MmJiYWQyODA1MGQ5NjViYjZlNTcxN2YtNDAweDQwMC05MC53ZWJw.webp" alt="" class="imglist-img">-->
+<!--                    <div class="imglist-text" >瓦伦丁小麦白啤</div>-->
+<!--                </a></div>-->
+<!--                <div class="imgbox-img"><a href="javascript:;" >-->
+<!--                    <img src="https://ccdn.goodq.top/caches/b2722f2617dd98e9cdb285b51047a21d/aHR0cHM6Ly81ZDdhMDE2MGIwZTdkLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDkvZjljNjdkYmE3MmJiYWQyODA1MGQ5NjViYjZlNTcxN2YtNDAweDQwMC05MC53ZWJw.webp" alt="" class="imglist-img">-->
+<!--                    <div class="imglist-text" >瓦伦丁小麦白啤</div>-->
+<!--                </a></div>-->
+<!--                <div class="imgbox-img"><a href="javascript:;" >-->
+<!--                    <img src="https://ccdn.goodq.top/caches/b2722f2617dd98e9cdb285b51047a21d/aHR0cHM6Ly81ZDdhMDE2MGIwZTdkLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDkvZjljNjdkYmE3MmJiYWQyODA1MGQ5NjViYjZlNTcxN2YtNDAweDQwMC05MC53ZWJw.webp" alt="" class="imglist-img">-->
+<!--                    <div class="imglist-text" >瓦伦丁小麦白啤</div>-->
+<!--                </a></div>-->
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
 
 
     <!-- 底部 -->
@@ -162,7 +207,7 @@ index/showjiu.css">
                     </div>
                 </a>
             </div>
-            <div class="list1">
+            <div class="list2">
                 <a href="/server/8.15/mvc/index.php/admin/center/int">产品中心
                     &nbsp-
                     &nbsp

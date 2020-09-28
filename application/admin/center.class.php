@@ -2,6 +2,8 @@
 if(!defined("MVC")){
 //    die("非法入侵");
 }
+
+use libs\pages;
 use \libs\smarty;
 use \libs\db;
 use \libs\upload;
@@ -12,12 +14,20 @@ class center {
        $shops="";
         $database=new db();
         $this->db=$database->db;
-        $this->getshops($shops);
+        $sql="select * from jiu";
+        $request=$this->db->query($sql);
+        $page=new pages();
+        $page->total=$request->num_rows;
+        $foot=$page->show();
+        $sql.=$page->limit;
+        $this->getshops($shops,$sql);
         $smarty->assign("shops",$shops);
+        $smarty->assign("foot",$foot);
        $smarty->display("index/center.html");
     }
-    function getshops(&$shops){
-        $result=$this->db->query("select * from jiu limit 0,6");
+    function getshops(&$shops,$sql){
+
+        $result=$this->db->query($sql);
         while ($row=$result->fetch_assoc()){
 
             $shops.='

@@ -9,13 +9,14 @@
     <link rel="stylesheet" href="{CSS_ADD}bootstrap.css">
     <link rel="stylesheet" href="{CSS_ADD}admin/addjiu.css">
     <script src="{JS_ADD}jquery-3.5.1.min.js"></script>
+    <script src="{JS_ADD}jquery.validate.min.js"></script>
     <script src="{JS_ADD}admin/upload.js"></script>
-    <script src="{JS_ADD}/admin/editjius.js"></script>
+    <script src="{JS_ADD}admin/addjius.js"></script>
 </head>
 <body>
 <div class="container ba">
     <div class="pannel editpannel">
-        <form action="/server/8.15/mvc/index.php/admin/jiu/addjius" method="post">
+        <form action="/server/8.15/mvc/index.php/admin/jiu/addjius" method="post" class="addjiu">
             <div class="form-group">
                 <label for="jname"> 酒的名字</label>
                 <input type="text" name="jname" id="jname" class="form-control">

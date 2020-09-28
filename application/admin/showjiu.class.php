@@ -13,8 +13,11 @@ class showjiu {
         $jid=$_GET["jid"];
         $database=new db();
         $this->db=$database->db;
+        $others="";
         $this->getshop($data,$jid);
+        $this->getother($others);
         $smarty->assign("data",$data);
+        $smarty->assign("others",$others);
         $smarty->display("index/showjiu.html");
     }
 
@@ -75,9 +78,18 @@ class showjiu {
             </div>
         </div>';
         }
-
-
-
-
     }
+    function getother(&$others){
+        $result=$this->db->query("select * from jiu limit 6");
+        while ($row=$result->fetch_assoc()){
+            $others.=' <div class="imgbox-img">
+                    <a href="/server/8.15/mvc/index.php/admin/showjiu/int?jid='.$row["jid"].'" >
+                    <img src="'.$row["jimg"].'" alt="" class="imglist-img" style="width: 400px;height: 400px">
+                     <div class="imglist-text" >'.$row["jname"].'</div>
+                    </a>
+                </div>';
+        }
+    }
+
+
 }

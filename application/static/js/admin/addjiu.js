@@ -1,6 +1,41 @@
 
 $(function () {
+    $(".addjiu").validate({
+        ignore: "",
+        rules:{
+            jname:{
+                required:true,
+            },
+            jcons:{
+                required:true,
+            },
+            imgsrc:{
+                required:true,
+            },
+            jval:{
+                required:true,
+            }
+
+
+        },
+        messages:{
+            jname:{
+                required:"酒的名字必填",
+            },
+            jcons:{
+                required:"请输入酒的信息",
+
+            },
+            imgsrc:{
+                required:"请选择一张图片",
+            },
+            jval:{
+                required:"请选择介绍酒含量的图片",
+            }
+        }
+    })
     var uploadObj = new upload();
+
     console.log(document.querySelector("#imgsrc"))
     uploadObj.multiple = true;
     uploadObj.createView({

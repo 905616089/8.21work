@@ -59,4 +59,16 @@ class indexus{
 
         }
     }
+    public function update(){
+        $database=new db();
+        $this->db=$database->db;
+        $this->getus($data);
+        $user=$_POST["user"];
+        $email=$_POST["email"];
+        $cons=$_POST["cons"];
+        $request=$this->db->query("insert into updates (user,email,cons) values ('$user','$email','$cons')");
+        if($this->db->affected_rows>0){
+            echo "<script>alert('建议已提交')</script>";
+        }
+    }
 }

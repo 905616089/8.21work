@@ -5,7 +5,9 @@
 html,body{
     height: 100%;
 }
-
+a{
+    text-decoration: none;
+}
 
 .top{
     position: fixed;
@@ -355,4 +357,49 @@ height: 880px;
 }
 .foot-content{
     text-align: center;
+}
+.banner1{
+    background: url("https://ccdn.goodq.top/caches/b2722f2617dd98e9cdb285b51047a21d/aHR0cHM6Ly81ZDdhMDE2MGIwZTdkLnQ3NC5xaWZlaXllLmNvbS9xZnktY29udGVudC91cGxvYWRzLzIwMTkvMDkvYTc4YWM0NGQ3ZTBlMGFmOTgzMDVjMzk3YWMyOWE1YmItOTAud2VicA_p_p100_p_3D_p_p100_p_3D.webp");
+    width: 100%;
+    height: 705px;
+    padding: 100px 50px;
+}
+.banner1-imgbox{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+.banner-img-box{
+    width: 200%;
+    height: 100%;
+    position: relative;
+    left: 0;
+
+}
+.imgbox-img{
+    float: left;
+    width: 16.66666666666%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imgbox-img a{
+    color: black;
+    text-decoration: none;
+}
+.imglist-text{
+
+    font-size: 18px;
+    font-family: 微软雅黑;
+    font-weight: normal;
+    padding-top: 20px;
+    text-align: center;
+}
+.imgbox-img a:hover{
+    color: #3c763d;
+}
+.imglist-img{
+    transition:all 1s ease 0s;
 }

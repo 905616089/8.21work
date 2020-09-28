@@ -27,7 +27,7 @@ class content{
     function getoption(&$str){
         $result=$this->db->query("select * from style");
         while ($row=$result->fetch_assoc()){
-            $str.='<tr><td>'.$row["stylename"].'</td><td>'.$row["styleimg"].'</td><td>'.$row["stylecons"].'</td><td><a href="/server/8.15/mvc/index.php/admin/content/editstyle?id='.$row["id"].'">修改</a></td></tr>';
+            $str.='<tr><td>'.$row["stylename"].'</td><td><img src='.$row["styleimg"].' alt=""></td><td>'.$row["stylecons"].'</td><td><a href="/server/8.15/mvc/index.php/admin/content/editstyle?id='.$row["id"].'">修改</a></td></tr>';
         }
 
     }

@@ -42,7 +42,7 @@ for (var i = 0; i < 4; i++) {
 var startTime = 0, //翻屏起始时间  
     endTime = 0,
     now = 0;
-//浏览器兼容      
+//浏览器兼容
 if ((navigator.userAgent.toLowerCase().indexOf("firefox") != -1)) {
     document.addEventListener("DOMMouseScroll", scrollFun, { passive: false });
 }

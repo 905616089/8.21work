@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-09-02 14:33:02
+/* Smarty version 3.1.34-dev-7, created on 2020-09-14 11:45:46
   from 'E:\wamp64\www\server\8.15\mvc\application\template\index\boke.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f4fad1e2c1d68_65884590',
+  'unifunc' => 'content_5f5f57ea418502_66870819',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '4424122db3c059d416cfa43433756b2c4874314e' => 
     array (
       0 => 'E:\\wamp64\\www\\server\\8.15\\mvc\\application\\template\\index\\boke.html',
-      1 => 1599057053,
+      1 => 1600083907,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f4fad1e2c1d68_65884590 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f5f57ea418502_66870819 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 
@@ -58,10 +58,18 @@ function content_5f4fad1e2c1d68_65884590 (Smarty_Internal_Template $_smarty_tpl)
                     alt="">
             </div>
         </div>
-        <div class="center">
-            <div class="center-left1">
-                <?php echo $_smarty_tpl->tpl_vars['data']->value;?>
+        <div class="center ">
 
+            <div class="center-left1 is-loading">
+                <div class="is-loading">
+                    <div class="box">loader 17
+                        <div class="loader-11"></div>
+                    </div>
+                </div>
+                <div class="center-left2">
+                    <?php echo $_smarty_tpl->tpl_vars['data']->value;?>
+
+                </div>
 
             </div>
 
@@ -126,15 +134,7 @@ function content_5f4fad1e2c1d68_65884590 (Smarty_Internal_Template $_smarty_tpl)
                 </div>
 
             </div>
-
-
         </div>
-
-
-
-
-
-
     </div>
 
 

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-08-31 12:49:19
+/* Smarty version 3.1.34-dev-7, created on 2020-09-25 12:47:05
   from 'E:\wamp64\www\server\8.15\mvc\application\template\admin\index.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f4cf1cfd2c331_84567251',
+  'unifunc' => 'content_5f6de6c9d5c006_19129068',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd8237ec045a3505a966c17a0f9cc21cf223d8049' => 
     array (
       0 => 'E:\\wamp64\\www\\server\\8.15\\mvc\\application\\template\\admin\\index.html',
-      1 => 1598878157,
+      1 => 1601036682,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f4cf1cfd2c331_84567251 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f6de6c9d5c006_19129068 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
 <head>
@@ -69,32 +69,40 @@ admin/index.css">
     <div class="cleft">
         <ul>
             <li>
-                <div class="litext"><a href="/server/8.15/mvc/index.php/admin/jiu/int" target="main">酒</a></div>
+                <a href="/server/8.15/mvc/index.php/admin/jiu/int" target="main"><div class="litext">酒</div></a>
             </li>
             <li>
-                <div class="litext"><a href="/server/8.15/mvc/index.php/admin/category/int" target="main">啤酒简介</a></div>
+                <a href="/server/8.15/mvc/index.php/admin/category/int" target="main"><div class="litext">啤酒简介</div></a>
             </li>
             <li>
-                <div class="litext"><a href="/server/8.15/mvc/index.php/admin/content/int" target="main">品牌介绍</a></div>
+                <a href="/server/8.15/mvc/index.php/admin/content/int" target="main"><div class="litext">品牌介绍</div></a>
             </li>
             <li>
-                <div class="litext"><a href="/server/8.15/mvc/index.php/admin/shops/int" target="main">商品中心</a></div>
+                <a href="/server/8.15/mvc/index.php/admin/shops/int" target="main"><div class="litext">商品中心</div></a>
             </li>
             <li>
-                <div class="litext"><a href="/server/8.15/mvc/index.php/admin/boke/int" target="main">品牌博客</a></div>
+                <a href="/server/8.15/mvc/index.php/admin/boke/int" target="main"><div class="litext">品牌博客</div></a>
             </li>
             <li>
-                <div class="litext"><a href="/server/8.15/mvc/index.php/admin/us/int" target="main">联系我们</a></div>
+                <a href="/server/8.15/mvc/index.php/admin/us/int" target="main"><div class="litext">联系我们</div></a>
+            </li>
+            <li>
+                <a href="/server/8.15/mvc/index.php/admin/us/usemessage" target="main"><div class="litext">用户建议</div></a>
             </li>
         </ul>
 
     </div>
     <div class="cright">
 
-    <iframe src="" frameborder="0" name="main"></iframe>
+    <iframe src="/server/8.15/mvc/index.php/admin/jiu/int" frameborder="0" name="main"></iframe>
     </div>
 
 </div>
+<footer>
+    <div class="company">
+        @ 2019  酒业官网  All Rights reserved
+    </div>
+</footer>
 </body>
 </html><?php }
 }

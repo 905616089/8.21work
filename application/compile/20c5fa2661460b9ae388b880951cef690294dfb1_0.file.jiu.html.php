@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.34-dev-7, created on 2020-08-31 06:56:25
+/* Smarty version 3.1.34-dev-7, created on 2020-09-10 12:18:29
   from 'E:\wamp64\www\server\8.15\mvc\application\template\admin\jiu.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.34-dev-7',
-  'unifunc' => 'content_5f4c9f19970ce2_44039454',
+  'unifunc' => 'content_5f5a19954985c9_51991201',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '20c5fa2661460b9ae388b880951cef690294dfb1' => 
     array (
       0 => 'E:\\wamp64\\www\\server\\8.15\\mvc\\application\\template\\admin\\jiu.html',
-      1 => 1598856983,
+      1 => 1599740303,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5f4c9f19970ce2_44039454 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5f5a19954985c9_51991201 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!doctype html>
 <html lang="en">
 <head>
@@ -96,7 +96,7 @@ admin/upload.js"><?php echo '</script'; ?>
 
 
 <div class="conntainer">
-    <div class="foot" style="text-align: center">
+    <div class="foot" style="display: flex;justify-content: center;align-items: center">
         <?php echo $_smarty_tpl->tpl_vars['foot']->value;?>
 
     </div>

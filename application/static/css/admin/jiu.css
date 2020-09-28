@@ -20,3 +20,8 @@ table tbody tr td{
 table{
     margin-top: 10px;
 }
+.foot:after{
+    content: "";
+    display: block;
+    clear: both;
+}

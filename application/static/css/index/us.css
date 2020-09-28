@@ -277,7 +277,12 @@ display: inline-block;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
- 
+    overflow: hidden;
+}
+.bottom-center:after{
+    content: "";
+    display: block;
+    clear: both;
 }
 .bc1{
     float: left;

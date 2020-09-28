@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{CSS_ADD}bootstrap.css">
+    <link rel="stylesheet" href="{CSS_ADD}admin/category.css">
+    <script src="{JS_ADD}jquery-3.5.1.min.js"></script>
+    <script src="{JS_ADD}admin/category.js"></script>
+    <script src="{JS_ADD}admin/upload.js"></script>
+</head>
+<body>
+<div class="box">
+    <h1>用户建议</h1>
+    {if $data}
+    <table class="table table-bordered" style='table-layout:fixed;'>
+        <thead>
+        <tr>
+            <td style='width: 20%;'>建议ID</td>
+            <td  style='width:20%;'>用户名</td>
+            <td  style='width:20%;'>用户建议</td>
+            <td  style='width:20%;'>提交时间</td>
+        </tr>
+        </thead>
+        {$data}
+    </table>
+    {else}
+    <table>
+        <tr>
+            <td>没有数据</td>
+        </tr>
+    </table>
+    {/if}
+</div>
+</body>
+</html>

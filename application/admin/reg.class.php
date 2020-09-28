@@ -41,7 +41,9 @@ class reg{
         $db->db->query("insert into stu (user,password) values ('$user','$password')");
 
         if($db->db->affected_rows>0){
-            echo "插入成功";
+            $_SESSION["login"]="yes";
+            $_SESSION["user"]=$user;
+            header("location:/server/8.15/mvc/index.php/admin/index/frist");
         }
     }
     function checkname(){

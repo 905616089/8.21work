@@ -24,3 +24,55 @@ topButton.onclick=function(){
 closes.onclick=function(){
     $(".navigationWeb").animate({right:-400+"px"},500)
 }
+$(".from-button").click(function (res) {
+    res.preventDefault();
+    var data=$(".lists2").serialize();
+
+    var flag = $(".lists2").valid();
+
+    if (!flag) {
+       alert("请确认信息完整")
+        return;
+    }
+        $.ajax({
+        url:"/server/8.15/mvc/index.php/admin/indexus/update",
+        type:"POST",
+        data:data,
+        success:function (e) {
+            console.log(e)
+            alert("建议提交成功");
+        },
+        error:function (e) {
+            console.log(e);
+            alert("建议提交失败");
+        }
+    })
+})
+
+$(".lists2").validate({
+        rules:{
+            user:{
+                required:true,
+            },
+            cons:{
+                required: true,
+                minlength: 5
+            }
+        },
+        messages:{
+            user:{
+                required:"用户名没有填写",
+            },
+            password: {
+                required:"内容没有填写",
+                minlength:'内容至少个5字符'
+            }
+        }
+    })
+
+
+
+
+
+
+
